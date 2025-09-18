@@ -1,0 +1,46 @@
+/* Centrar el recorte de las imágenes del carrusel */
+.carousel-inner img {
+  object-position: center;
+}
+
+/* Altura del carrusel responsiva */
+@media (max-width: 768px) {
+  .carousel-inner img { height: 320px; }
+}
+@media (max-width: 480px) {
+  .carousel-inner img { height: 240px; }
+}
+
+/* Respetar usuarios con “reducir movimiento” */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-brand img,
+  .logo-click {
+    transition: none;
+  }
+}
+
+/* Asegurar contraste del botón primario */
+.btn-primary {
+  color: #fff;
+}
+
+/* ================= OFFCANVAS ================= */
+/* Ancho del offcanvas en pantallas ≥992px */
+@media (min-width: 992px) {
+  #offcanvasRight.offcanvas-end {
+    width: 420px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Dispositivos pequeños (teléfonos en horizontal, 576px y superiores) */
+}
+@media (min-width: 768px) {
+  /* Dispositivos pmedianos (tabletas,768px y superiores) */
+}
+@media (min-width: 576px) {
+  /* Dispositivos grandes (computadoras de escritorio ,992px y superiores) */
+}
+@media (min-width: 576px) {
+  /* Dispositivos pequeños (escritorios grandes, 1200px y superiores) */
+}
